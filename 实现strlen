@@ -1,0 +1,14 @@
+int strlen(char* str1)
+{
+	if (*str1 == NULL)
+	{
+		printf("输入字符串有误\n");
+		return NULL;
+	}
+	int i = 0;
+	while (str1[i++] != '\0')
+	{
+		;
+	}
+	return --i;
+}
