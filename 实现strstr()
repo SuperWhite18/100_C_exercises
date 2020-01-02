@@ -1,0 +1,10 @@
+char* strstr(char *str1, char *str2)
+{
+	int n = strlen(str2);
+	for (; *str1 != 0; ++str1) {
+		if (strncmp(str1, str2, n) == 0) {
+			return (char*)str1;
+		}
+	}
+	return NULL;
+}
